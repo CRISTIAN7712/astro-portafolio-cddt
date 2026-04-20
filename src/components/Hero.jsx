@@ -259,24 +259,24 @@ export default function Hero() {
           {/* Left Side: Intro and Title */}
           <div className="flex-1 max-w-lg lg:max-w-xl text-left">
             <p className="text-sm md:text-base text-gray-300 font-medium tracking-widest uppercase mb-6 opacity-90 drop-shadow-md">
-              Hey, I’m Leeshark
+              Cristian David Díaz Tovar
             </p>
             
             <h1 className="text-2xl md:text-3xl lg:text-[1rem] xl:text-[3.5rem] font-bold tracking-tighter drop-shadow-2xl leading-[1.05] font-sans">
-              Crafting Digital<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-500 font-serif italic font-light pr-2">Excellence</span> from<br />
-              End to End
+              Ingeniero de Sistemas<br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-500 font-serif italic font-light pr-2">y Especialista</span> en<br />
+              Ingeniería de Software
             </h1>
           </div>
           
           {/* Right Side: Description and CTA */}
           <div className=" flex-1 max-w-md text-left md:text-right flex flex-col md:items-end">
             <p className="w-110 text-lg md:text-xl text-gray-300 drop-shadow-xl font-light tracking-wide leading-relaxed mb-8">
-              I build scalable web applications that merge striking design with robust, high-performance functionality. Seamless interactions, engineered for the future.
+              Backend Developer con experiencia en Java (Spring Boot), Node.js, SQL, microservicios y Docker. Transformo necesidades de negocio en soluciones escalables con Clean Architecture y principios SOLID.
             </p>
             
             <button className="pointer-events-auto px-8 py-4 rounded-full border border-white/30 text-white text-sm tracking-[0.2em] uppercase font-medium hover:bg-white hover:text-black hover:border-white transition-all duration-500 backdrop-blur-sm shadow-xl inline-block">
-              Start a Project
+              Ver experiencia
             </button>
           </div>
             
