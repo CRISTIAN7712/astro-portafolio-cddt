@@ -140,14 +140,14 @@ export default function About() {
           
           <div className="overflow-hidden">
             <h2 className="stagger-reveal text-5xl md:text-6xl font-bold tracking-tighter text-white font-sans leading-tight">
-              The Dual <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500 font-serif italic pr-4">Persona</span>
+              Perfil <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500 font-serif italic pr-4">Profesional</span>
             </h2>
           </div>
 
           <div className="overflow-hidden">
             <p className="stagger-reveal text-lg md:text-xl text-gray-400 font-light leading-relaxed max-w-xl">
-              There are two sides to every great digital experience. The relentless logic of the backend, and the striking, emotional pull of the frontend. As a Full-Stack Developer, my superpower lies in bridging that gap—masking complex, high-performance web architecture behind beautiful, fluid, and fiercely creative user interfaces.
+              Ingeniero de Sistemas y Especialista en Ingeniería de Software con sólida experiencia en desarrollo backend. He trabajado en la implementación de microservicios, contenedorización con Docker y adopción de prácticas modernas de desarrollo para entregar productos robustos y mantenibles.
             </p>
           </div>
 
@@ -155,10 +155,10 @@ export default function About() {
           <div className="overflow-hidden">
             <div className="stagger-reveal grid grid-cols-2 gap-x-8 gap-y-4 pt-4 border-t border-white/10 max-w-xl">
               {[
-                "Full-Stack Fluidity", 
-                "Motion & Micro-Interactions", 
-                "System Architecture", 
-                "Pixel-Perfect UIs"
+                "Java + Spring Boot",
+                "Node.js y SQL",
+                "Microservicios",
+                "Clean Architecture"
               ].map((skill, i) => (
                 <div key={i} className="flex items-center space-x-3 group">
                   <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-red-500 transition-colors duration-300" />
@@ -174,7 +174,7 @@ export default function About() {
           <div className="overflow-hidden mt-6">
             <blockquote className="stagger-reveal border-l-2 border-red-500/50 pl-6 py-2">
               <p className="text-xl md:text-2xl text-gray-200 font-serif italic">
-                “Logic builds the foundation. <br /> Imagination breaks the boundaries.”
+                “Liderazgo técnico, arquitectura sólida y enfoque práctico para construir software con impacto.”
               </p>
             </blockquote>
           </div>

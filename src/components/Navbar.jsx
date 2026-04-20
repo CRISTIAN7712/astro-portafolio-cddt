@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 const NAV_LINKS = [
-  { name: 'Home', href: '#' },
-  { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Inicio', href: '#' },
+  { name: 'Perfil', href: '#about' },
+  { name: 'Experiencia', href: '#projects' },
+  { name: 'Contacto', href: '#contact' },
 ];
 
 export default function Navbar() {
@@ -104,13 +104,13 @@ export default function Navbar() {
           
           {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer group">
-            {/* Minimalist Spider/Web-inspired SVG Logo */}
+            {/* Minimalist CDDT/Web-inspired SVG Logo */}
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-white transition-transform duration-500 group-hover:rotate-45 group-hover:scale-110">
               <path d="M12 2L12 22M2 12L22 12M5 5L19 19M5 19L19 5" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
               <circle cx="12" cy="12" r="6" stroke="currentColor" strokeWidth="1" strokeDasharray="2 2" />
             </svg>
             <span className="text-white font-bold tracking-widest uppercase text-sm ml-2 opacity-90 group-hover:opacity-100 transition-opacity">
-              Spider
+              CDDT
             </span>
           </div>
 
@@ -136,7 +136,7 @@ export default function Navbar() {
               ref={el => linksRef.current[NAV_LINKS.length] = el} // animate with the links
               className="relative px-6 py-2.5 rounded-full overflow-hidden group bg-transparent border border-white/20 text-white text-sm font-medium tracking-wider hover:border-white/60 transition-colors duration-300"
             >
-              <span className="relative z-10 group-hover:text-black transition-colors duration-300">Let's Talk</span>
+              <span className="relative z-10 group-hover:text-black transition-colors duration-300">Contactar</span>
               {/* Button Inner Fill Effect */}
               <div className="absolute inset-0 h-full w-full bg-white scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]" />
             </button>
@@ -181,7 +181,7 @@ export default function Navbar() {
             onClick={() => setIsMobileMenuOpen(false)}
             className="mt-8 px-8 py-3 rounded-full border border-white text-white tracking-widest hover:bg-white hover:text-black transition-all duration-300"
           >
-            Hire Me
+            Escríbeme
           </button>
         </div>
       </div>

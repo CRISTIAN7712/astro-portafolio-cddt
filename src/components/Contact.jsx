@@ -35,7 +35,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Insert actual send behavior here later
-    alert("Connection encrypted. Message transmitted!");
+    alert("¡Mensaje enviado! Gracias por contactarme.");
   };
 
   return (
@@ -54,13 +54,16 @@ export default function Contact() {
         {/* Header Block */}
         <div className="mb-12 animate-element">
           <p className="text-red-500 font-mono text-sm tracking-[0.3em] uppercase font-bold mb-4">
-            [ Encrypted Channel ]
+            [ Información de Contacto ]
           </p>
           <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-white font-sans leading-none mb-6 drop-shadow-xl">
-            Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-white font-serif italic pr-2">Connect</span>
+            Hablemos <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-white font-serif italic pr-2">hoy</span>
           </h2>
           <p className="text-gray-400 font-light text-lg tracking-wide leading-relaxed max-w-xl mx-auto">
-            Whether you have a groundbreaking tech vision, a complex application to build, or just want to talk shop—my inbox is always open. Let’s collaborate and architect the digital tools of tomorrow.
+            Ubicación: Cúcuta, Norte de Santander.<br />
+            Teléfono: +57 305 937 9897.<br />
+            Correo: cristian.diaz8918@gmail.com.<br />
+            LinkedIn: linkedin.com/in/ing-dev-cddt.
           </p>
         </div>
 
@@ -68,46 +71,46 @@ export default function Contact() {
         <form ref={formRef} onSubmit={handleSubmit} className="w-full flex flex-col space-y-6">
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Name Input */}
+            {/* Nombre Input */}
             <div className="relative group animate-element">
               <input 
                 type="text" 
                 id="name"
                 required
                 className="peer w-full bg-white/5 border border-white/5 text-white text-base rounded-xl px-5 py-4 outline-none transition-all duration-300 focus:bg-white/10 focus:border-red-500/50 focus:shadow-[0_0_20px_rgba(239,68,68,0.2)] placeholder-transparent"
-                placeholder="Name"
+                placeholder="Nombre"
               />
               <label htmlFor="name" className="absolute left-5 top-4 text-gray-500 text-base pointer-events-none transition-all duration-300 peer-focus:-top-3 peer-focus:text-xs peer-focus:text-red-400 peer-valid:-top-3 peer-valid:text-xs peer-valid:text-gray-400 bg-[#030303] px-1 rounded">
-                Name
+                Nombre
               </label>
             </div>
             
-            {/* Email Input */}
+            {/* Correo Input */}
             <div className="relative group animate-element">
               <input 
                 type="email" 
                 id="email"
                 required
                 className="peer w-full bg-white/5 border border-white/5 text-white text-base rounded-xl px-5 py-4 outline-none transition-all duration-300 focus:bg-white/10 focus:border-red-500/50 focus:shadow-[0_0_20px_rgba(239,68,68,0.2)] placeholder-transparent"
-                placeholder="Email"
+                placeholder="Correo"
               />
               <label htmlFor="email" className="absolute left-5 top-4 text-gray-500 text-base pointer-events-none transition-all duration-300 peer-focus:-top-3 peer-focus:text-xs peer-focus:text-red-400 peer-valid:-top-3 peer-valid:text-xs peer-valid:text-gray-400 bg-[#030303] px-1 rounded">
-                Email
+                Correo
               </label>
             </div>
           </div>
 
-          {/* Message Textarea */}
+          {/* Mensaje Textarea */}
           <div className="relative group animate-element">
             <textarea 
               id="message"
               required
               rows="5"
               className="peer w-full bg-white/5 border border-white/5 text-white text-base rounded-xl px-5 py-4 outline-none transition-all duration-300 focus:bg-white/10 focus:border-red-500/50 focus:shadow-[0_0_20px_rgba(239,68,68,0.2)] placeholder-transparent resize-none"
-              placeholder="Message"
+              placeholder="Mensaje"
             ></textarea>
             <label htmlFor="message" className="absolute left-5 top-4 text-gray-500 text-base pointer-events-none transition-all duration-300 peer-focus:-top-3 peer-focus:text-xs peer-focus:text-red-400 peer-valid:-top-3 peer-valid:text-xs peer-valid:text-gray-400 bg-[#030303] px-1 rounded">
-              Message
+              Mensaje
             </label>
           </div>
 
@@ -121,7 +124,7 @@ export default function Contact() {
               <span className="absolute inset-0 bg-gradient-to-r from-red-600/0 via-red-600/20 to-red-600/0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
               
               <span className="relative z-10 flex items-center justify-center space-x-3">
-                <span>Transmit Message</span>
+                <span>Enviar mensaje</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300 text-red-500">
                   <line x1="22" y1="2" x2="11" y2="13"></line>
                   <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
